@@ -5,13 +5,13 @@
 class UddiTokenCalculator < Formula
   desc "Estimates Infoblox Universal DDI management tokens from cloud infrastructure"
   homepage "https://github.com/stefanriegel/UDDI-Token-Calculator"
-  version "2.1.2"
+  version "2.1.3"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.1.2/uddi-token-calculator_darwin_arm64.tar.gz"
-      sha256 "0f19d9edfe04d76713369d54411d8173b853cb19bdaa665f39c3768a6c3f663f"
+      url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.1.3/uddi-token-calculator_darwin_arm64.tar.gz"
+      sha256 "8d76c6604818022e27ab318bf5efb3bc5869df464ed3d4442dfe97cb05057bce"
 
       define_method(:install) do
         bin.install "uddi-token-calculator"
@@ -21,8 +21,8 @@ class UddiTokenCalculator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.1.2/uddi-token-calculator_linux_amd64.tar.gz"
-      sha256 "43b05fdbb8c876819f92f049bacc01894c6dd2ff5f84f200219e5543af93a4c4"
+      url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.1.3/uddi-token-calculator_linux_amd64.tar.gz"
+      sha256 "5b345738c28b91dac2276956b9fd0892e0959cf35502d4d1424f7c93440e2d2c"
       define_method(:install) do
         bin.install "uddi-token-calculator"
       end
