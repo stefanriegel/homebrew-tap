@@ -11,7 +11,7 @@ class UddiTokenCalculator < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.5.0/uddi-token-calculator_darwin_arm64.tar.gz"
-      sha256 "472f895b1ed8e0095cc75ef20aa06a162b58da144a9f8d08a3ddf974fde359ae"
+      sha256 "c91dc12e99931c4433cbb6f6b6dbf127368751bbdf6b61ee3180ab20b1281990"
 
       define_method(:install) do
         bin.install "uddi-token-calculator"
@@ -22,7 +22,7 @@ class UddiTokenCalculator < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v2.5.0/uddi-token-calculator_linux_amd64.tar.gz"
-      sha256 "a60f586112358aeb2ae80df7d1ea80de76d63c559ee9269fb11705544e963f4f"
+      sha256 "07eb8b2b8b490fe0d302151efd925f7cad26fb210cdcbb512137b00991283c77"
       define_method(:install) do
         bin.install "uddi-token-calculator"
       end
