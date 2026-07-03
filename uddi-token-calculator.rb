@@ -8,6 +8,10 @@ class UddiTokenCalculator < Formula
   version "3.4.4"
   license "Proprietary"
 
+  # Manually deprecated: the project was renamed. GoReleaser now generates
+  # `universal-token-assessment.rb` and no longer regenerates this file.
+  deprecate! date: "2026-07-03", because: "renamed to `universal-token-assessment` — run `brew install stefanriegel/tap/universal-token-assessment`"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/stefanriegel/UDDI-Token-Calculator/releases/download/v3.4.4/uddi-token-calculator_darwin_arm64.tar.gz"
