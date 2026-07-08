@@ -5,13 +5,13 @@
 class UniversalTokenAssessment < Formula
   desc "Estimates Infoblox Universal DDI management tokens from cloud infrastructure"
   homepage "https://github.com/stefanriegel/Universal-Token-Assessment"
-  version "3.7.0"
+  version "3.8.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stefanriegel/Universal-Token-Assessment/releases/download/v3.7.0/universal-token-assessment_darwin_arm64.tar.gz"
-      sha256 "26c397eb6e2304b7b7ea6c6e3a2fca29b78d5eb7aa59f2d3a4352ffd71901ac5"
+      url "https://github.com/stefanriegel/Universal-Token-Assessment/releases/download/v3.8.0/universal-token-assessment_darwin_arm64.tar.gz"
+      sha256 "fe3cd43bda38e0f9502c49c20c6b5d7c07fa17c8d1cc0e4d1679caa67fb9b095"
 
       define_method(:install) do
         bin.install "universal-token-assessment"
@@ -21,8 +21,8 @@ class UniversalTokenAssessment < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanriegel/Universal-Token-Assessment/releases/download/v3.7.0/universal-token-assessment_linux_amd64.tar.gz"
-      sha256 "5901b051be04c6bf1e660c3953caaeb5e25d0ff758014343929658362e7dafe9"
+      url "https://github.com/stefanriegel/Universal-Token-Assessment/releases/download/v3.8.0/universal-token-assessment_linux_amd64.tar.gz"
+      sha256 "a2581a96b175dfc72cbe25ba04f353a731a9ba178914eede52a79922bb8f2d63"
       define_method(:install) do
         bin.install "universal-token-assessment"
       end
