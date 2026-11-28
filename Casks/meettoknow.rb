@@ -1,6 +1,6 @@
 cask "meettoknow" do
-  version "2026.11.26"
-  sha256 "abad12de3975c3228144fc87bf1da4fa582e32db1275a1762228aef654761fa6"
+  version "2026.11.28"
+  sha256 "edaaa3ec971965578a276e6add1fe12604050cb14efbc12c3144c43ab2542b00"
 
   url "https://github.com/stefanriegel/meettoknow-releases/releases/download/v#{version}/MeetToKnow-#{version}.dmg"
   name "MeetToKnow"
